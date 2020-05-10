@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Switch } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+import  { DisplayWithoutTS } from './pages/WithoutTS'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <a href="/">No TS</a>
+        <a href="/withts">With TS</a>
+      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={DisplayWithoutTS}/>
+          <Route exact path='*' >
+            <div>
+              404 Page Not Found
+            </div>
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
