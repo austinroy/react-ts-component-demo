@@ -3,7 +3,6 @@ import {shape, string, number, arrayOf} from 'prop-types'
 
 
 const DisplayData = ({data}) => {
-    console.log(data)
     return (
         <div>
             <div>Name: {data.name}</div>

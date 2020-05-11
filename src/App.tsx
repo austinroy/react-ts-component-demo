@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import  { DisplayWithoutTS } from './pages/WithoutTS'
 import { DisplayWithTS } from './pages/WithTS'
 
@@ -10,8 +9,10 @@ function App() {
     <div className="App">
       <div>
         <a href="/">No TS</a>
+        <br/>
         <a href="/withts">With TS</a>
       </div>
+      <br/><br/>
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={DisplayWithoutTS}/>
