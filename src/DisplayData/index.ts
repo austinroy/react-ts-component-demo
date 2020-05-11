@@ -1,10 +1,12 @@
-export { DisplayData } from './DisplayData'
+export * from './DisplayData'
 
 interface DisplayDataProps {
-    name: String,
-    alias: String[],
-    powers: String[],
-    rating: Number,
+    data : {
+        name: String,
+        alias: String[],
+        powers: String[],
+        rating: Number,
+    }
 }
 
 declare module '.'{
