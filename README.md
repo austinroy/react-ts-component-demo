@@ -1,3 +1,6 @@
+# React Component compatibility for JS and TS codebases
+A demo of how you can make a react component easily usable for a codebase with both JS and TS files
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
