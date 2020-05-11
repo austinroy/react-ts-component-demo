@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
 import  { DisplayWithoutTS } from './pages/WithoutTS'
-
+import { DisplayWithTS } from './pages/WithTS'
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={DisplayWithoutTS}/>
+          <Route exact path='/withts' component={DisplayWithTS}/>
           <Route exact path='*' >
             <div>
               404 Page Not Found
