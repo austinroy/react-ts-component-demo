@@ -22,4 +22,13 @@ DisplayData.propTypes = {
     })
 }
 
+DisplayData.defaultProps = {
+    data: {
+        name: '',
+        alias: [],
+        powers: [],
+        rating: null,
+    }
+}
+
 export { DisplayData }
