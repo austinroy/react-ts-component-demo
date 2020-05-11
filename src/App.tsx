@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <a href="/">No TS</a>
+        <a href="/">With JS</a>
         <br/>
         <a href="/withts">With TS</a>
       </div>
